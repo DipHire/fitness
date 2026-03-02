@@ -1,0 +1,16 @@
+namespace: dip-ns
+
+deployment:
+  replicas: 3
+  app: fitness-app
+  name: fitness-container
+  repository: diphire/fitness
+  tag: v1.0.0
+  port: 80
+
+service:
+  app: fitness-app
+  protocol: TCP
+  port: 80
+  targetPort: 80
+  type: LoadBalancer
