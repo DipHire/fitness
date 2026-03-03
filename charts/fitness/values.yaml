@@ -8,6 +8,7 @@ deployment:
   tag: v1.0.0
   port: 80
 
+
 service:
   app: fitness-app
   protocol: TCP
